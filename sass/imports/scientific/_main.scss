@@ -1,0 +1,183 @@
+// scientific_page
+
+.scientific_page {
+    background: $backgroundColor;
+    padding: 40px 0 160px;
+}
+
+
+// info_section
+
+.info_section {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.description_block {
+    max-width: 1114px;
+    margin: 0 auto;
+    padding-top: $colPadding;
+}
+
+
+// info_section
+
+
+
+// list_section
+
+.list_section {
+    padding-top: 40px;
+}
+
+.scientific_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -10px;
+    list-style-type: none;
+
+    li {
+        @include standardCol(3);
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+// list_section
+
+
+// scientific_page
+
+
+
+// scientific_inner
+
+.scientific_inner {
+
+    padding: 40px 0 220px;
+
+    // info_row
+
+    .info_row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 $rowMargin;
+        padding-top: 35px
+    }
+
+    .left_block {
+        @include standardCol(5);
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 688 / 443;
+        }
+    }
+
+    .right_block {
+        @include standardCol(7);
+        padding-top: 45px
+    }
+
+    .block_title {
+        @extend %pageTitle;
+        color: $siteColor;
+    }
+
+    .block_bottom {
+        padding-top: 35px;
+    }
+
+
+    .bottom_info {
+        flex-direction: row;
+        align-items: start;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .block_info {
+        padding: 0;
+        margin-left: 16px;
+    }
+
+    .type_proffesion {
+        padding-top: 8px;
+    }
+
+    .inner_info {
+        @extend %middleText;
+    }
+
+    .specialist_name {
+        position: relative;
+        color: $darckblue;
+
+        &:before {
+            @include psevdoAbs;
+            width: 2px;
+            height: 22px;
+            background: $siteColor;
+            right: -8px;
+        }
+    }
+
+    .type_proffesion {
+        color: $blueA9;
+        font-family: $bold;
+    }
+
+    // info_row
+
+
+    // symptom_section
+
+    .symptom_section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        padding-top: 160px;
+        align-items: center;
+
+        .left_block {
+            @include standardCol(7);
+        }
+
+        .right_block {
+            @include standardCol(5);
+            padding-top: 0;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 688 / 443;
+            }
+        }
+    }
+
+}
+
+.standard_textpage {
+    padding: 0;
+
+    ul li {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        color: $siteColor;
+        font-family: $bold;
+        font-size: 2rem;
+        line-height: 1.22em;
+    }
+}
+
+ // symptom_section

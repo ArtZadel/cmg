@@ -1,0 +1,62 @@
+@include mediaTo($size960) {
+    .scientific_page {
+        padding: 30px 0 80px
+    }
+
+    .scientific_list {
+        li {
+            @include colSize(6);
+            margin-bottom: 30px;
+        }
+    }
+
+    .paging {
+        padding-top: 20px;
+    }
+
+    .info_section {
+        padding-top: 20px
+    }
+
+ 
+
+}
+
+@include mediaTo($size768) {
+
+    .scientific_page {
+        padding: 20px 0 60px;
+    }
+
+    .scientific_list {
+        li {
+            @include colSize(12);
+        }
+    }
+    
+    .list_section {
+        padding-top: 20px;
+    }
+}
+
+
+@include mediaTo($size576) {
+
+    .scientific_page {
+        padding-bottom: 40px;
+    }
+
+    .scientific_list {
+        li {
+            @include colSize(12);
+        }
+    }
+    
+    .list_section {
+        padding-top: 20px;
+    }
+
+    .paging {
+        padding-top: 10px;
+    }
+}

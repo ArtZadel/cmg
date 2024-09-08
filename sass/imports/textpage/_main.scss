@@ -1,0 +1,32 @@
+.text_page {
+    background: $backgroundColor;
+    padding: 115px 0 220px;
+
+    @include mediaTo($size960) {
+        padding: 80px 0 160px;
+    }
+
+    @include mediaTo($size768) {
+        padding: 60px 0 120px;
+    }
+
+    @include mediaTo($size576) {
+        padding: 40px 0;
+    }
+
+    .standard_textpage {
+        padding: 40px 15px 0;
+
+        @include mediaTo($size960) {
+            padding-top: 30px;
+        }
+
+        @include mediaTo($size576) {
+            padding-top: 20px;
+        }
+    }
+}
+
+.page_title {
+    text-align: center;
+}

@@ -1,0 +1,281 @@
+%standardList {
+	@include standardList();
+}
+
+%standardRowList {
+	@include standardRowList();
+}
+
+%coverLayer {
+	@include coverLayer();
+}
+
+%fixedCover {
+	@include fixCoverLayer;
+}
+
+%verticalRotate {
+	@include transStyle(scaleX(-1));
+}
+
+%horizontalRotate {
+	@include transStyle(scaleY(-1));
+}
+
+%centeredImage {
+	> img {
+		@extend %coverLayer;
+		object-fit: cover;
+	}
+}
+
+%coverVideo {
+	iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+%square {
+	@include overHidden();
+	@extend %centeredImage;
+	@extend %coverVideo;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 100%;
+	}
+}
+
+%almostSquare {
+	@include overHidden();
+	@extend %centeredImage;
+	@extend %coverVideo;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 75%;
+	}
+}
+
+%lessWide {
+	@include overHidden();
+	@extend %centeredImage;
+	@extend %coverVideo;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 62.5%;
+	}
+}
+
+%standardWide {
+	@include overHidden();
+	@extend %centeredImage;
+	@extend %coverVideo;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 56.25%;
+	}
+}
+
+%halfWide {
+	@include overHidden();
+	@extend %centeredImage;
+	@extend %coverVideo;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 50%;
+	}
+}
+
+%superWide {
+	@include overHidden();
+	@extend %centeredImage;
+	@extend %coverVideo;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 25%;
+	}
+}
+
+%standardNarrow {
+	@include overHidden();
+	@extend %centeredImage;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 100.78%;
+	}
+}
+
+%lessNarrow {
+	@include overHidden();
+	@extend %centeredImage;
+	&:before {
+		display: block;
+		content: "";
+		padding-bottom: 133.33%;
+	}
+}
+
+%iconElement {
+	&:before,
+	&:after {
+		font-family: 'icon' !important;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+%noBlink {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+%centerBlock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+%centerInlineBlock {
+	display: inline-flex;
+	vertical-align: top;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+%linkTypeBtn {
+	border: none;
+	padding: 0;
+	background: transparent;
+}
+
+%largeText {
+	font-size: 200%;
+	line-height: 24px;
+}
+
+
+%middleText {
+	font-size: 160%;
+	line-height: 22px;
+}
+
+%standardText {
+	font-size: 140%;
+	line-height: 20px;
+}
+
+%smallText {
+	font-size: 120%;
+	line-height: 15px;
+}
+
+
+%pageTitle {
+	font-family: $bold;
+	margin: 0;
+	color: inherit;
+	letter-spacing: 0.01em;
+	line-height: 1.4em;
+	@include mediaFrom($size1280) {
+		font-size: 360%
+	}
+	@include mediaRange($size960, $size1280) {
+		font-size: 300%;
+	}
+	@include mediaTo($size960) {
+		font-size: 220%
+	}
+}
+
+%subTitle {
+	font-family: $bold;
+	font-size: 320%;
+	line-height: 1.25em;
+	margin: 0;
+	color: inherit;
+	@include mediaRange($size960, $size1280) {
+		font-size: 250%;
+		line-height: 1.3em;
+	}
+	@include mediaRange($size768, $size960) {
+		font-size: 200%;
+		line-height: 1.25em;
+	}
+	@include mediaRange($size576, $size768) {
+		font-size: 180%;
+		line-height: 1.25em;
+	}
+	@include mediaTo($size576) {
+		font-size: 160%;
+		line-height: 1.25em;
+	}
+}
+
+
+%sectionTitle {
+	font-size: 240%;
+	line-height: 1.17em;
+	margin: 0;
+	color: inherit;
+	@include mediaRange($size960, $size1280) {
+		font-size: 220%;
+		line-height: 1.2em;
+	}
+	@include mediaRange($size768, $size960) {
+		font-size: 200%;
+		line-height: 1.22em;
+	}
+	@include mediaRange($size576, $size768) {
+		font-size: 180%;
+		line-height: 1.25em;
+	}
+	@include mediaTo($size576) {
+		font-size: 160%;
+		line-height: 1.3em;
+	}
+}
+
+
+%standardBtn {
+	border: none;
+	height: 60px;
+	@extend %largeText;
+	@extend %centerInlineBlock;
+	@include gridPadding;
+}
+
+%primaryBtn {
+	@extend %standardBtn;
+	background: $siteColor;
+	color: $white;
+	@include loading;
+}
+
+%secondaryBtn {
+	@extend %standardBtn;
+	outline: 1px solid $siteColor !important;
+	color: $siteColor;
+	background: transparent;
+	@include loading;
+}
+
+

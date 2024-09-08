@@ -1,0 +1,51 @@
+@include mediaTo($size960) {
+    .genetics_page {
+        padding: 30px 0 160px;
+
+        .workers_list {
+            padding-top: 40px;
+
+            li {
+                @include colSize(6);
+                padding-bottom: 30px;
+            }
+        }
+
+        .bottom_description {
+            padding-top: 40px;
+        }
+
+        .link_block {
+            padding-top: 30px;
+        }
+    }
+}
+
+
+@include mediaTo($size768) {
+    .genetics_page {
+        padding-bottom: 80px;
+
+        .bottom_description {
+            padding-top: 20px;
+        }
+
+        .link_block {
+            padding-top: 20px;
+        }
+    }
+    .standard_textpage ul {
+        padding: 0 0 0 17px;
+    }
+}
+
+
+@include mediaTo($size576) {
+    .genetics_page {
+        padding: 20px 0 40px;
+
+        .workers_list li {
+            @include colSize(12)
+        }
+    }
+}

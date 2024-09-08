@@ -1,0 +1,226 @@
+//work_block
+
+.work_block {
+    box-shadow: 14px 0 12.1px -5px $shadowColor;
+    border-radius: 50px;
+    background: $grayF6;
+    height: 100%;
+    @include overHidden;
+    min-height: 620px;
+    display: block;
+    @include mediaTo($size1200) {
+        min-height: 550px;
+    }
+    @include mediaTo($size768) {
+            min-height: 500px;
+    
+            
+    }
+
+
+    .info_workers {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 30px 30px;
+        position: relative;
+        height: 100%;
+
+        &:before {
+            display: block;
+            content: "";
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .workers_name {
+        @extend %sectionTitle;
+        color: $siteColor;
+        font-family: $bold;
+        padding-top: 70px;
+        @include zIndex(1);
+        @include mediaTo($size768) {
+            padding-top: 50px;
+        }
+    }
+
+    .workers_profession {
+        @extend %middleText;
+        color: $black;
+        font-family: $bold;
+        @include zIndex(1);
+        background: $white;
+        padding:  10px;
+        margin: 20px 0 0 -10px;
+        border-radius: 20px;
+        width: max-content;
+    }
+
+    .img_block {
+        @extend %coverLayer;
+        padding: 30px;
+        overflow: hidden;
+        @include animStyle(all 1s);
+        @extend %noBlink;
+
+        &:before {
+            @include psevdoAbs;
+            left: 30px;
+            right: 30px;
+            top: 100px;
+            padding-bottom: calc(100% - 60px);
+            border-radius: 50%;
+            box-shadow: 0 0 0 300px $white;
+            @include animStyle(all 1s);
+            @extend %noBlink;
+
+            @include mediaTo($size960) {
+                padding-bottom: calc(100% - 40px);
+            }
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+
+    }
+
+    span {
+        display: block;
+    }
+
+    &:hover .img_block {
+        padding: 0;
+
+        &:before {
+            left: 0;
+            right: 0;
+            top: 0;
+            border-radius: 50px;
+            padding-bottom: 160%;
+
+            @include mediaTo($size1600) {
+                padding-bottom: 250%;
+                top: -20px;
+            }
+        }
+    }
+}
+
+//work_block
+
+
+// news_block
+
+.news_block {
+    background: $white;
+    border-radius: 55px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+
+    .description_block {
+        @include textOverflow(3, relative);
+        color: $textColor;
+    }
+}
+
+.inner_news {
+    padding: $colPadding;
+    display: block;
+    .img_block img {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+.date_block,
+.description_block {
+    padding-top: 10px;
+    @extend %middleText;
+    display: block;
+}
+
+.date_block {
+    color: $grayD6;
+}
+
+.title_block {
+    padding-top: $colPadding;
+    @extend %sectionTitle;
+    color: $black;
+    font-family: $bold;
+    @include textOverflow(2, relative);
+}
+
+.block_bottom {
+    padding-top: 20px;
+    display: flex;
+
+    img {
+        display: block;
+        width: 100%;
+        object-fit: contain
+    }
+}
+
+.block_name {
+    @extend %middleText;
+    color: $darckblue;
+
+}
+
+.block_info {
+    color: $siteColor;
+    @extend %middleText;
+    padding-top: 10px;
+}
+
+.bottom_info {
+    display: flex;
+    flex-direction: column;
+    padding-left: $colPadding;
+    position: relative;
+
+    &:before {
+        @include psevdoAbs;
+        width: 22px;
+        height: 2px;
+        background: $siteColor;
+        top: 27px;
+    }
+    
+}
+
+// news_block
+
+
+// package_block
+
+.inner_list {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    border-radius: 20px;
+    padding: 80px 8px 20px 20px;
+    height: 100%;
+    box-shadow: 2px 2px 4px 0 $blackF1;
+    .sub_title {
+        min-height: 170px;
+        display: inline-flex;
+        vertical-align: top;
+        align-items: center;
+    }   
+}
+
+.animation_btn {
+    margin: 30px 12px 0 auto ;
+}
+
+
+// package_block

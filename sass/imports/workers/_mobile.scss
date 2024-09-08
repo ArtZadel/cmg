@@ -1,0 +1,192 @@
+@include mediaTo($size960) {
+
+    // workers
+
+    .workers_page {
+        padding: 30px 0 120px
+    }
+
+    .workers_list {
+        li {
+            @include colSize(6);
+            margin-bottom: 30px;
+        }
+    }
+
+    .field_block {
+        padding-top: 50px;
+    }
+
+    .paging {
+        padding-top: 30px;
+    }
+
+    .bottom_block {
+        padding-top: 60px;
+    }
+
+
+    // workers
+
+
+    // workers_inner
+
+    .workers_inner {
+        padding: 30px 0 80px;
+
+        .left_block,
+        .right_block {
+            @include colSize(12)
+        }
+
+        .left_block {
+            .img_block {
+                padding: 0;
+            }
+        }
+
+        .right_block {
+            padding-top: 30px;
+        }
+
+        .news_section {
+            padding-top: 50px;
+        }
+
+        .news_list li {
+            @include colSize(6);
+            margin-bottom: 20px;
+        }
+
+        .standard_textpage {
+            padding-top: 60px;
+        }
+    }
+
+
+    // workers_inner
+
+}
+
+
+@include mediaTo($size768) {
+
+    // workers
+
+    .workers_page {
+        padding: 20px 0 80px
+    }
+
+    .field_block {
+        padding-top: 30px;
+    }
+
+    .work_block {
+        border-radius: 40px;
+
+        .info_workers {
+            padding-top: 60px;
+        }
+
+        .workers_name {
+            padding-top: 70px;
+        }
+
+     
+
+    }
+
+    // workers
+
+
+    // workers_inner
+
+    .workers_inner {
+        padding: 20px 0 50px;
+
+        .news_section {
+            padding-top: 20px;
+        }
+
+        .statics_list {
+            padding-top: 40px;
+            flex-direction: column;
+
+            li {
+                position: relative;
+
+                &:not(:last-child) {
+                    padding-bottom: 30px;
+
+                    &:before {
+                        @include psevdoAbs;
+                        width: 100%;
+                        height: 2px;
+                        background: $siteColor;
+                        opacity: 40%;
+                        bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        .news_list li {
+            @include colSize(12);
+            margin-bottom: 30px;
+        }
+
+        .standard_textpage {
+            padding-top: 40px;
+        }
+
+       
+    }
+
+    // workers_inner
+}
+
+
+@include mediaTo($size600) {
+    .workers_list {
+        li {
+            @include colSize(12);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@include mediaTo($size576) {
+
+    // workers 
+
+    .workers_page {
+        padding: 20px 0 40px
+    }
+
+    .paging {
+        padding-top: 20px;
+    }
+
+    .bottom_block {
+        padding-top: 40px;
+    }
+
+    .work_block {
+        border-radius: 30px;
+    }
+
+    // workers 
+
+    // workers_inner 
+    .workers_inner {
+        padding: 15px 0 30px;
+
+        .inner_section {
+            padding-top: 20px;
+        }
+    }
+
+    // workers_inner 
+
+}

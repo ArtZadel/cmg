@@ -1,0 +1,8 @@
+@include mediaRange($size960, $size1200) {
+    .scientific_list {
+        li {
+            @include colSize(4);
+        }
+    }
+
+}

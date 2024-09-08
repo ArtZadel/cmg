@@ -1,0 +1,74 @@
+.genetics_page {
+    background: $backgroundColor;
+    padding: 40px 0 220px;
+
+    .description_block {
+        max-width: 1114px;
+        margin: 0 auto;
+    }
+
+    .workers_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        padding: 80px 0 0;
+        list-style-type: none;
+
+        li {
+            @include standardCol(3);
+        }
+    }
+
+    .bottom_description {
+        padding-top: 80px;
+    }
+
+    .standard_textpage {
+        padding-top: $colPadding;
+
+        ul {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+    }
+
+    .link_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .block_text {
+        @extend %subTitle;
+        color: $siteColor;
+    }
+
+    .animation_btn {
+        margin: 0 0 0 30px;
+
+        .btn_inner {
+            border: 3px solid $siteColor;
+        }
+
+        .rotate_btn {
+            border: 3px solid $siteColor;
+
+            &:before {
+                color: $siteColor;
+            }
+        }
+
+        &:hover {
+            .rotate_btn {
+                background: $siteColor;
+
+                &:before {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}

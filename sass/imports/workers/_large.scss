@@ -1,0 +1,10 @@
+@include mediaRange($size960, $size1200) {
+    .workers_list {
+        li {
+            @include colSize(4);
+            margin-bottom: 30px;
+        }
+    }
+
+}
+

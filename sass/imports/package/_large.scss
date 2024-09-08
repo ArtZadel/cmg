@@ -1,0 +1,9 @@
+@include mediaRange($size960, $size1600) {
+    .package_page {
+        .sub_title {
+            font-size: 200%;
+            line-height: 1.25em;
+        }
+    }
+}
+

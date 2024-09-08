@@ -1,0 +1,169 @@
+.workers_page {
+    background: $backgroundColor;
+    padding: 40px 0 160px;
+
+}
+
+//page_info
+
+.page_info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.description_block {
+    padding-top: $colPadding;
+    max-width: 1114px;
+    margin: 0 auto;
+}
+
+//page_info
+
+.field_block {
+    padding-top: 80px;
+}
+
+// workers_list
+
+.workers_list {
+    margin: 0 -13px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        padding: 0 13px;
+        margin-bottom: 40px;
+        @include colSize(3)
+    }
+}
+
+// workers_list
+
+
+// bottom_block
+
+.bottom_block {
+    padding-top: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    @extend %middleText;
+    text-align: center;
+}
+
+// bottom_block
+
+
+// workers_inner
+
+.workers_inner {
+    background: $backgroundColor;
+    padding: 40px 0 160px;
+
+
+    .page_title {
+        color: $black;
+        font-family: $regular;
+        text-align: center;
+        max-width: 970px;
+
+        span {
+            font-family: $bold;
+            display: inline-block;
+            color: $siteColor;
+        }
+    }
+
+    // inner_section
+
+
+    .inner_section {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        margin: 0 -15px;
+    }
+
+    .left_block {
+        @include standardCol(4);
+        text-align: center;
+
+        .img_block {
+            padding: 10px 70px;
+        }
+    }
+
+
+    .right_block {
+        @include standardCol(7);
+        padding-top: 40px;
+    }
+
+    .statics_list {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 80px 0 0;
+
+        li {
+            flex: 1;
+        }
+    }
+
+    .list_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .number_block {
+        font-size: 960%;
+        line-height: 73px;
+        color: $siteColor;
+        font-family: $bold;
+    }
+
+    .info_block {
+        @extend %largeText;
+        color: $siteColor;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    // inner_section
+
+    // news section
+
+
+    .news_section {
+        padding-top: 160px;
+    }
+
+    .news_list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0 0;
+        margin: 0 -15px;
+        list-style-type: none;
+
+        li {
+            @include standardCol(3);
+            padding: 0 10px;
+        }
+    }
+
+    .img_block {
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+// news section
+
+
+// workers_inner

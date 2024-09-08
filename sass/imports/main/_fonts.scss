@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "notosans";
+    font-display: swap;
+    src: url('../../fonts/NotoSansRegular/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/NotoSansRegular/NotoSans-Regular.woff') format('woff'),
+    url('../../fonts/NotoSansRegular/NotoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "notosansarm";
+    font-display: swap;
+    src: url('../../fonts/NotoSansArmenian-Regular/NotoSansArmenian-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/NotoSansArmenian-Regular/NotoSansArmenian-Regular.woff') format('woff'),
+    url('../../fonts/NotoSansArmenian-Regular/NotoSansArmenian-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "notosans-bold";
+    font-display: swap;
+    src: url('../../fonts/NotoSansBold/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/NotoSansBold/NotoSans-Bold.woff') format('woff'),
+    url('../../fonts/NotoSansBold/NotoSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "notosansarm-bold";
+    font-display: swap;
+    src: url('../../fonts/NotoSansArmenian-Bold/NotoSansArmenian-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/NotoSansArmenian-Bold/NotoSansArmenian-Bold.woff') format('woff'),
+    url('../../fonts/NotoSansArmenian-Bold/NotoSansArmenian-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "notosans-medium";
+    font-display: swap;
+    src: url('../../fonts/NotoSans-Medium/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/NotoSans-Medium/NotoSans-Medium.woff') format('woff'),
+    url('../../fonts/NotoSans-Medium/NotoSans-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "notosansarm-medium";
+    font-display: swap;
+    src: url('../../fonts/NotoSansArmenian-Medium/NotoSansArmenian-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/NotoSansArmenian-Medium/NotoSansArmenian-Medium.woff') format('woff'),
+    url('../../fonts/NotoSansArmenian-Medium/NotoSansArmenian-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icon';
+    font-display: 'auto';
+    src: url('../../fonts/icons/icomoon.eot?8vejuf');
+    src: url('../../fonts/icons/icomoon.eot?8vejuf#iefix') format('embedded-opentype'),
+         url('../../fonts/icons/icomoon.ttf?8vejuf') format('truetype'),
+         url('../../fonts/icons/icomoon.woff?8vejuf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*="icon_"] {
+    @extend %iconElement;
+}
+
+//social icons
+.icon_facebook:before {
+    content: "\e90a";
+}
+.icon_instagram:before {
+    content: "\e90b";
+}
+.icon_linkedin:before {
+    content: "\e90c";
+}
+.icon_twitter:before {
+    content: "\e90d";
+}
+.icon_pinterest:before {
+    content: "\e90e";
+}
+.icon_youtube:before {
+    content: "\e90f";
+}
+.icon_telegram:before {
+    content: "\e91a";
+}
+.icon_ok:before {
+    content: "\e91b";
+}
+.icon_vk:before {
+    content: "\e91c";
+}
+.icon_google:before {
+    content: "\e91d";
+}
+.icon_tiktok:before {
+    content: "\e91e";
+}
+.icon_flickr:before {
+    content: "\e91f";
+}
+
+//other icons
+.icon_s1_logo:before {
+    content: "\e900";
+}
+.icon_down:before {
+    content: "\e901";
+}
+.icon_left:before {
+    content: "\e902";
+}
+.icon_right:before {
+    content: "\e903";
+}
+.icon_close:before {
+    content: "\e904";
+}
+.icon_check:before {
+    content: "\e905";
+}
+.icon_search:before {
+    content: "\e906";
+}
+.icon_globe:before {
+    content: "\e907";
+}
+.icon_info:before {
+    content: "\e908";
+}
+.icon_success:before {
+    content: "\e909";
+}
+.icon_warning:before {
+    content: "\e910";
+}
+.icon_error:before {
+    content: "\e911";
+}
+.icon_rotate:before {
+    content: "\e918";
+  }
+
+.icon_breadcrumbs:before {
+    content: "\e917";
+    color: #0b4ca0;
+}
+
+.icon_call:before {
+    content: "\e920";
+}
+.icon_pin:before {
+    content: "\e921";
+}
+.icon_mail:before {
+    content: "\e922";
+}
+.icon_arrow:before {
+    content: "\e918";
+}
+.icon_cart:before {
+    content: "\e913";
+}
+.icon_avatar:before {
+    content: "\e914";
+}
+.icon_search:before {
+    content: "\e915";
+}
+.icon_phone:before {
+    content: "\e916";
+}
+.icon_globe:before {
+    content: "\e917";
+}
+.icon_location:before {
+    content: "\e919";
+}

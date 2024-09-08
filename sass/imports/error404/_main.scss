@@ -1,0 +1,38 @@
+
+.error_content {
+    width: 100%;
+    height: auto;
+    @extend %centerBlock;
+    .section_title {
+        @extend %pageTitle;
+        padding-top: 35px;
+    }
+    .page_links {
+        padding-top: $colPadding;
+        a {
+            @extend %largeText;
+            font-family: $bold;
+            @extend %opacityHover;
+            span {
+                display: inline-block;
+                position: relative;
+                &:before {
+                    @include psevdoAbs;
+                    width: 100%;
+                    height: 1px;
+                    background: $siteColor;
+                    bottom: 2px;
+                }
+            }
+        }
+    }
+    img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+        aspect-ratio: 558 / 512;
+        @include mediaTo($size576) {
+            height: auto;
+        }
+    }
+}

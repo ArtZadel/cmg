@@ -1,0 +1,73 @@
+@media screen and (max-width: 1699px) {
+  .header .locations_block .drop_btn,
+  .header .lg_block .drop_btn,
+  .header .main_menu > li > a,
+  .header .call_block .phones_block {
+    font-size: 120%;
+    line-height: 15px;
+  }
+  .header .secondary_menu,
+  .header .top_action a,
+  .header .top_action button {
+    font-size: 140%;
+    line-height: 20px;
+  }
+  .header .main_menu > li {
+    padding: 0 10px;
+  }
+  .header .lg_block {
+    margin-left: 15px;
+  }
+  .header .main_menu {
+    padding-left: 270px;
+    position: unset;
+  }
+  .header .main_menu > li > .submenu_block {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header .main_logo .mobile_logo,
+  .menu_btn,
+  .mob_search_btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .header_top, .header_bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header .main_menu {
+    margin: 0 -10px;
+  }
+  .header .main_menu > li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header .locations_block .drop_btn {
+    white-space: nowrap;
+  }
+  .header .search_block {
+    margin-right: 16px;
+  }
+  .header .secondary_menu {
+    right: 76px;
+  }
+  .header .main_menu > li > .submenu_block .submenu_list,
+  .header .main_menu > li > .submenu_block .submenu_block {
+    padding: 20px;
+  }
+  .header .main_menu > li > .submenu_block li:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .genetics_page .workers_list li {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=index-l.css.map */

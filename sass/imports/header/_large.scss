@@ -1,0 +1,91 @@
+@include mediaTo($containerWidth+20) {
+    .header {
+
+        .locations_block .drop_btn,
+        .lg_block .drop_btn,
+        .main_menu > li > a,
+        .call_block .phones_block {
+            font-size: 120%;
+            line-height: 15px;
+        }
+         .secondary_menu,
+         .top_action a,
+         .top_action button{
+             font-size: 140%;
+             line-height: 20px;
+        }
+
+        .main_menu > li {
+            padding: 0 10px;
+        }
+
+        .lg_block {
+            margin-left: 15px;
+        }
+
+        .main_menu {
+            padding-left: 270px;
+            position: unset;
+            > li > .submenu_block{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@include mediaFrom($size960) {
+    .header .main_logo .mobile_logo,
+    .menu_btn,
+    .mob_search_btn {
+        display: none;
+    }
+}
+
+@include mediaRange($size960, $size1280) {
+    .header {
+        &_top,
+        &_bottom {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .main_menu {
+            margin: 0 -10px;
+
+            > li {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .locations_block {
+            .drop_btn {
+                white-space: nowrap;
+            }
+        }
+
+        .search_block {
+            margin-right: 16px;
+        }
+
+        .secondary_menu {
+            right: 76px;
+        }
+
+        .main_menu > li {
+            > .submenu_block {
+                .submenu_list,
+                .submenu_block {
+                    padding: 20px;
+
+                }
+
+                li:not(:first-child) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+    }
+}
+
